@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.dropwizard:dropwizard-core:0.7.1'
+    compile 'com.jasonclawson:jackson-dataformat-hocon:1.0.8'
+    compile 'com.jasonclawson.dropwizardry:dropwizardry-config-hocon:0.5.1'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
